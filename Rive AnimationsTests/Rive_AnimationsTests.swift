@@ -2,7 +2,7 @@
 //  Rive_AnimationsTests.swift
 //  Rive AnimationsTests
 //
-//  Created by Smart Solar Nepal on 17/07/2024.
+//  Created by Deepam Dhakal on 17/07/2024.
 //
 
 import XCTest

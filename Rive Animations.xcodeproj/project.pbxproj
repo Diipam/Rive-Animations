@@ -27,6 +27,9 @@
 		F373AD722C479862003C4798 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD712C479862003C4798 /* OnBoardingScreen.swift */; };
 		F373AD762C479A27003C4798 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD752C479A27003C4798 /* AppFont.swift */; };
 		F373AD792C479FCA003C4798 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD782C479FCA003C4798 /* SignInView.swift */; };
+		F373AD7B2C47BEFE003C4798 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD7A2C47BEFE003C4798 /* CustomTextField.swift */; };
+		F373AD7D2C47C611003C4798 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD7C2C47C611003C4798 /* RoundedCorner.swift */; };
+		F373AD7F2C47D221003C4798 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD7E2C47D221003C4798 /* CustomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		F373AD732C4798DC003C4798 /* Rive-Animations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rive-Animations-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F373AD752C479A27003C4798 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		F373AD782C479FCA003C4798 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F373AD7A2C47BEFE003C4798 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F373AD7C2C47C611003C4798 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		F373AD7E2C47D221003C4798 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				F373AD752C479A27003C4798 /* AppFont.swift */,
+				F373AD7A2C47BEFE003C4798 /* CustomTextField.swift */,
+				F373AD7C2C47C611003C4798 /* RoundedCorner.swift */,
+				F373AD7E2C47D221003C4798 /* CustomColor.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -386,9 +395,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F373AD722C479862003C4798 /* OnBoardingScreen.swift in Sources */,
+				F373AD7F2C47D221003C4798 /* CustomColor.swift in Sources */,
+				F373AD7D2C47C611003C4798 /* RoundedCorner.swift in Sources */,
 				F373AD2A2C478029003C4798 /* Rive_AnimationsApp.swift in Sources */,
 				F373AD792C479FCA003C4798 /* SignInView.swift in Sources */,
 				F373AD762C479A27003C4798 /* AppFont.swift in Sources */,
+				F373AD7B2C47BEFE003C4798 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
