@@ -18,9 +18,29 @@ struct OnBoardingScreen: View {
 
                 content
 
-                if showModal {
-                    SignInView()
-                        .transition(.move(edge: .bottom))
+                Color("Shadow")
+                    .opacity(showModal ? 0.4 : 0)
+                    .ignoresSafeArea()
+
+                if  showModal {
+                    SignInView(showModal: $showModal)
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                        .overlay {
+                            Button {
+                                withAnimation(.bouncy) {
+                                    showModal.toggle()
+                                }
+                            } label: {
+                                Image(systemName: "xmark")
+                                    .frame(width: 36, height: 36)
+                                    .foregroundStyle(.black)
+                                    .background(.white)
+                                    .mask(Circle())
+                                .shadow(color: Color("Shadow"), radius: 5, x: 0, y: 3)
+                            }
+                            .frame(maxHeight: .infinity, alignment: .bottom)
+                        }
+                        .zIndex(1)
                 }
             }
         }
@@ -42,6 +62,7 @@ struct OnBoardingScreen: View {
                 .frame(width: 236, height: 64)
                 .overlay {
                     Label("Start the Course", systemImage: "arrow.forward")
+                        .foregroundStyle(.black)
                         .offset(x: 4, y: 4)
                         .font(.headline)
                 }
@@ -54,7 +75,7 @@ struct OnBoardingScreen: View {
                 )
                 .onTapGesture {
                     button.play(animationName: "active")
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                         withAnimation(.spring) {
                             showModal.toggle()
                         }

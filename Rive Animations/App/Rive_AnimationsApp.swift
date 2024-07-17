@@ -12,6 +12,7 @@ struct Rive_AnimationsApp: App {
     var body: some Scene {
         WindowGroup {
             OnBoardingScreen()
+                .preferredColorScheme(.light)
         }
     }
 }

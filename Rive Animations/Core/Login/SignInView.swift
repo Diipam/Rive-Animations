@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct SignInView: View {
     @State private var email = ""
     @State private var password = ""
+    @FocusState private var isFocused: Bool
+    @State private var isLoading = false
+    @Binding var showModal: Bool
+    let check = RiveViewModel(fileName: "check")
+    let celebration = RiveViewModel(fileName: "confetti")
 
     var body: some View {
         VStack(spacing: 24) {
@@ -25,6 +31,8 @@ struct SignInView: View {
                     .foregroundStyle(.secondary)
                 TextField("Enter your email", text: $email)
                     .customtextField(imageIcon: "Icon Email")
+                    .focused($isFocused)
+
             }
 
             VStack(alignment: .leading) {
@@ -35,15 +43,19 @@ struct SignInView: View {
                     .customtextField(imageIcon: "Icon Lock")
             }
 
-            Label("Sign In" , systemImage: "arrow.right")
-                .appFont(.headline)
-                .padding(15)
-                .frame(maxWidth: .infinity)
-                .background(Color(hex: "F77D8E"))
-                .foregroundStyle(.white)
-                .cornerRadius(radius: 20, corners: [.topRight, .bottomLeft, .bottomRight])
-                .cornerRadius(radius: 8, corners: [.topLeft])
-                .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 10, x: 0, y: 5)
+            Button {
+               validate()
+            } label: {
+                Label("Sign In" , systemImage: "arrow.right")
+                    .appFont(.headline)
+                    .padding(15)
+                    .frame(maxWidth: .infinity)
+                    .background(Color(hex: "F77D8E"))
+                    .foregroundStyle(.white)
+                    .cornerRadius(radius: 20, corners: [.topRight, .bottomLeft, .bottomRight])
+                    .cornerRadius(radius: 8, corners: [.topLeft])
+                    .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 10, x: 0, y: 5)
+            }
 
             HStack {
                 Rectangle()
@@ -80,9 +92,50 @@ struct SignInView: View {
                 .stroke(LinearGradient(colors: [.white.opacity(0.8), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing))
         }
         .padding()
+        .overlay {
+            ZStack{
+                if isLoading {
+                    check.view()
+                        .frame(width: 100, height: 100)
+                        .allowsHitTesting(false)
+                }
+                celebration.view()
+                    .scaleEffect(3)
+                    .allowsHitTesting(false)
+            }
+        }
+    }
+
+    func validate() {
+        isLoading = true
+
+        if email != "" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Check")
+            }
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+                celebration.triggerInput("Trigger explosion")
+            }
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation(.spring) {
+                    showModal = false
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                check.triggerInput("Error")
+            }
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isLoading = false
+            }
+        }
     }
 }
 
 #Preview {
-    SignInView()
+    SignInView(showModal: .constant(true))
 }
