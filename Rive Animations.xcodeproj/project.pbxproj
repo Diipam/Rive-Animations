@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F373AD2A2C478029003C4798 /* Rive_AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD292C478029003C4798 /* Rive_AnimationsApp.swift */; };
-		F373AD2C2C478029003C4798 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD2B2C478029003C4798 /* ContentView.swift */; };
 		F373AD2E2C47802A003C4798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F373AD2D2C47802A003C4798 /* Assets.xcassets */; };
 		F373AD312C47802A003C4798 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F373AD302C47802A003C4798 /* Preview Assets.xcassets */; };
 		F373AD3B2C47802A003C4798 /* Rive_AnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD3A2C47802A003C4798 /* Rive_AnimationsTests.swift */; };
@@ -22,6 +21,12 @@
 		F373AD622C4781DF003C4798 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = F373AD5A2C4781DF003C4798 /* icons.riv */; };
 		F373AD632C4781DF003C4798 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = F373AD5B2C4781DF003C4798 /* menu_button.riv */; };
 		F373AD642C4781DF003C4798 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = F373AD5C2C4781DF003C4798 /* shapes.riv */; };
+		F373AD6D2C4797EE003C4798 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F373AD692C4797EE003C4798 /* Inter-Regular.ttf */; };
+		F373AD6E2C4797EE003C4798 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F373AD6A2C4797EE003C4798 /* Inter-SemiBold.ttf */; };
+		F373AD6F2C4797EE003C4798 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F373AD6B2C4797EE003C4798 /* Poppins-Bold.ttf */; };
+		F373AD722C479862003C4798 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD712C479862003C4798 /* OnBoardingScreen.swift */; };
+		F373AD762C479A27003C4798 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD752C479A27003C4798 /* AppFont.swift */; };
+		F373AD792C479FCA003C4798 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F373AD782C479FCA003C4798 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,6 @@
 /* Begin PBXFileReference section */
 		F373AD262C478029003C4798 /* Rive Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rive Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F373AD292C478029003C4798 /* Rive_AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rive_AnimationsApp.swift; sourceTree = "<group>"; };
-		F373AD2B2C478029003C4798 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F373AD2D2C47802A003C4798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F373AD302C47802A003C4798 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F373AD362C47802A003C4798 /* Rive AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rive AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,13 @@
 		F373AD5A2C4781DF003C4798 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
 		F373AD5B2C4781DF003C4798 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
 		F373AD5C2C4781DF003C4798 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		F373AD692C4797EE003C4798 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		F373AD6A2C4797EE003C4798 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F373AD6B2C4797EE003C4798 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F373AD712C479862003C4798 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
+		F373AD732C4798DC003C4798 /* Rive-Animations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rive-Animations-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F373AD752C479A27003C4798 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		F373AD782C479FCA003C4798 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +121,12 @@
 		F373AD282C478029003C4798 /* Rive Animations */ = {
 			isa = PBXGroup;
 			children = (
-				F373AD292C478029003C4798 /* Rive_AnimationsApp.swift */,
-				F373AD2B2C478029003C4798 /* ContentView.swift */,
-				F373AD2D2C47802A003C4798 /* Assets.xcassets */,
+				F373AD732C4798DC003C4798 /* Rive-Animations-Info.plist */,
+				F373AD672C4797A2003C4798 /* App */,
+				F373AD662C4797A0003C4798 /* Core */,
+				F373AD652C47979E003C4798 /* Utils */,
+				F373AD682C4797B2003C4798 /* Services */,
 				F373AD2F2C47802A003C4798 /* Preview Content */,
-				F373AD5D2C4781DF003C4798 /* RiveAssets */,
 			);
 			path = "Rive Animations";
 			sourceTree = "<group>";
@@ -156,6 +168,75 @@
 				F373AD5C2C4781DF003C4798 /* shapes.riv */,
 			);
 			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		F373AD652C47979E003C4798 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F373AD662C4797A0003C4798 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD772C479FA6003C4798 /* Login */,
+				F373AD702C479802003C4798 /* OnBoardingScreen */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F373AD672C4797A2003C4798 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD292C478029003C4798 /* Rive_AnimationsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F373AD682C4797B2003C4798 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD742C479A0B003C4798 /* ViewModifier */,
+				F373AD6C2C4797EE003C4798 /* Fonts */,
+				F373AD5D2C4781DF003C4798 /* RiveAssets */,
+				F373AD2D2C47802A003C4798 /* Assets.xcassets */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F373AD6C2C4797EE003C4798 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD692C4797EE003C4798 /* Inter-Regular.ttf */,
+				F373AD6A2C4797EE003C4798 /* Inter-SemiBold.ttf */,
+				F373AD6B2C4797EE003C4798 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F373AD702C479802003C4798 /* OnBoardingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD712C479862003C4798 /* OnBoardingScreen.swift */,
+			);
+			path = OnBoardingScreen;
+			sourceTree = "<group>";
+		};
+		F373AD742C479A0B003C4798 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD752C479A27003C4798 /* AppFont.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		F373AD772C479FA6003C4798 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F373AD782C479FCA003C4798 /* SignInView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +352,12 @@
 				F373AD5E2C4781DF003C4798 /* button.riv in Resources */,
 				F373AD312C47802A003C4798 /* Preview Assets.xcassets in Resources */,
 				F373AD622C4781DF003C4798 /* icons.riv in Resources */,
+				F373AD6E2C4797EE003C4798 /* Inter-SemiBold.ttf in Resources */,
 				F373AD5F2C4781DF003C4798 /* check.riv in Resources */,
 				F373AD642C4781DF003C4798 /* shapes.riv in Resources */,
 				F373AD2E2C47802A003C4798 /* Assets.xcassets in Resources */,
+				F373AD6F2C4797EE003C4798 /* Poppins-Bold.ttf in Resources */,
+				F373AD6D2C4797EE003C4798 /* Inter-Regular.ttf in Resources */,
 				F373AD612C4781DF003C4798 /* house.riv in Resources */,
 				F373AD632C4781DF003C4798 /* menu_button.riv in Resources */,
 				F373AD602C4781DF003C4798 /* confetti.riv in Resources */,
@@ -301,8 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F373AD2C2C478029003C4798 /* ContentView.swift in Sources */,
+				F373AD722C479862003C4798 /* OnBoardingScreen.swift in Sources */,
 				F373AD2A2C478029003C4798 /* Rive_AnimationsApp.swift in Sources */,
+				F373AD792C479FCA003C4798 /* SignInView.swift in Sources */,
+				F373AD762C479A27003C4798 /* AppFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +555,7 @@
 				DEVELOPMENT_TEAM = RJC4MPJ9ZS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rive-Animations-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,6 +585,7 @@
 				DEVELOPMENT_TEAM = RJC4MPJ9ZS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rive-Animations-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
