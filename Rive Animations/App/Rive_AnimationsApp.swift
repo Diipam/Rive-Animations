@@ -11,7 +11,7 @@ import SwiftUI
 struct Rive_AnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            OnBoardingScreen()
+            ContentView()
                 .preferredColorScheme(.light)
         }
     }

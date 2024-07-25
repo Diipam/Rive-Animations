@@ -9,7 +9,7 @@ import SwiftUI
 import RiveRuntime
 
 struct TabbarView: View {
-    @State private var selectedTab: Tab = .chat
+    @AppStorage("selectedtab") var selectedTab: Tab = .chat
     let icon = RiveViewModel(fileName: "icons")
 
     var body: some View {
